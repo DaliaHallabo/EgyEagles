@@ -1,0 +1,32 @@
+﻿@model EgyEagles.Application.DTOs.Companies.CreateCompanyDto
+@{
+    ViewData["Title"] = "Edit Company";
+    var id = ViewBag.CompanyId;
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 fw-semibold">Edit Company</h2>
+
+    <form asp-action="Edit" asp-route-id="@id" method="post" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Industry" class="form-label"></label>
+            <input asp-for="Industry" class="form-control" />
+            <span asp-validation-for="Industry" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary px-4 me-2">Update</button>
+        <a asp-action="Index" class="btn btn-secondary px-4">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+﻿@using EgyEagles.Domain.Models
+@model IEnumerable<ApplicationUser>
+
+@{
+    ViewData["Title"] = "Users & Permissions";
+}
+
+<h2>Users</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Manage Permissions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>
+                    <a asp-action="Manage" asp-route-userId="@user.Id" class="btn btn-primary">Manage</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

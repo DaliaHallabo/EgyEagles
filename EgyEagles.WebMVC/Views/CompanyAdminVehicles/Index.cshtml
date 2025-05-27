@@ -1,0 +1,63 @@
+﻿@using EgyEagles.Application.DTOs.Vehicles;
+@using EgyEagles.Application.Interfaces.Permissions;
+@using EgyEagles.Domain.Models
+@using Microsoft.AspNetCore.Identity
+
+@inject IPermissionService PermissionService
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    var currentUser = await UserManager.GetUserAsync(User);
+    var canAddVehicle = await PermissionService.HasPermissionAsync(currentUser.Id.ToString(), "AddVehicle");
+    var canDeleteVehicle = await PermissionService.HasPermissionAsync(currentUser.Id.ToString(), "RemoveVehicle");
+}
+
+@model List<VehicleDto>
+
+@{
+    ViewData["Title"] = "Vehicles";
+    string companyName = ViewBag.CompanyName as string ?? "Your Company";
+}
+
+<h2>Vehicles - @companyName</h2>
+
+@if (canAddVehicle)
+{
+    <a class="btn btn-success mb-3" asp-action="Create">Add Vehicle</a>
+}
+else
+{
+    <button class="btn btn-secondary mb-3" disabled title="You don’t have permission to add vehicles">Add Vehicle</button>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Plate Number</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehicle in Model)
+        {
+            <tr>
+                <td>@vehicle.PlateNumber</td>
+                <td>@vehicle.Model</td>
+                <td>@vehicle.Type</td>
+                <td>@vehicle.Status</td>
+                <td>
+                    @if (canDeleteVehicle)
+                    {
+                        <a asp-action="Delete" asp-route-id="@vehicle.Id" class="btn btn-danger btn-sm">Delete</a>
+                    }
+                    else
+                    {
+                        <button class="btn btn-danger btn-sm" disabled title="You don’t have permission to delete vehicles">Delete</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

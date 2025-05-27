@@ -1,0 +1,15 @@
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\bin\Debug\net9.0\EgyEagles.Application.deps.json
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\bin\Debug\net9.0\EgyEagles.Application.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\bin\Debug\net9.0\EgyEagles.Application.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\bin\Debug\net9.0\EgyEagles.Domain.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\bin\Debug\net9.0\EgyEagles.Domain.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagles.Application.csproj.AssemblyReference.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagles.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagles.Application.AssemblyInfoInputs.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagles.Application.AssemblyInfo.cs
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagles.Application.csproj.CoreCompileInputs.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagle.73A96E3E.Up2Date
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagles.Application.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\refint\EgyEagles.Application.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\EgyEagles.Application.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Application\obj\Debug\net9.0\ref\EgyEagles.Application.dll

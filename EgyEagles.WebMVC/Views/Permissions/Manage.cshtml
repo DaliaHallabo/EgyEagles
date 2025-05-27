@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Manage Permissions";
+    var permissions = ViewBag.CurrentPermissions as List<string>;
+}
+
+<h2>Manage Permissions for @ViewBag.UserName</h2>
+
+<h4>Current Permissions:</h4>
+<ul>
+    @foreach (var permission in permissions)
+    {
+        <li>@permission</li>
+    }
+</ul>
+
+<hr />
+
+<h4>Assign New Permission</h4>
+<form asp-action="Assign" method="post">
+    <input type="hidden" name="UserId" value="@ViewBag.UserId" />
+    <div class="form-group">
+        <label>Permissions (comma separated)</label>
+        <input name="Permissions" class="form-control" placeholder="e.g., ViewMap, ManageUsers" />
+    </div>
+    <button type="submit" class="btn btn-success mt-2">Assign</button>
+</form>
+
+<hr />
+
+<h4>Revoke Permissions</h4>
+<form asp-action="Revoke" method="post">
+    <input type="hidden" name="UserId" value="@ViewBag.UserId" />
+    <div class="form-group">
+        <label>Permissions to Revoke (comma separated)</label>
+        <input name="Permissions" class="form-control" placeholder="e.g., ViewMap" />
+    </div>
+    <button type="submit" class="btn btn-danger mt-2">Revoke</button>
+</form>

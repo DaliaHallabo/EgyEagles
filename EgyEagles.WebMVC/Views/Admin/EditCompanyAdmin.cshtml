@@ -1,0 +1,63 @@
+﻿@using EgyEagles.Application.DTOs.Users
+@model EditCompanyAdminDto
+
+@{
+    ViewData["Title"] = "Edit Company Admin";
+}
+
+<div class="container mt-4">
+    <div class="card shadow rounded-4">
+        <div class="card-body p-4">
+            <h3 class="mb-4 fw-bold text-primary">Edit Company Admin</h3>
+
+            <form asp-action="EditCompanyAdmin" method="post">
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+                <input type="hidden" asp-for="CompanyId" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="FullName" class="form-label fw-semibold"></label>
+                        <input asp-for="FullName" class="form-control" />
+                        <span asp-validation-for="FullName" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Email" class="form-label fw-semibold"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="CompanyId" class="form-label fw-semibold">Company</label>
+                        <select asp-for="CompanyId" asp-items="ViewBag.Companies" class="form-control"></select>
+                        <span asp-validation-for="CompanyId" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Role" class="form-label fw-semibold">Role</label>
+                        <select asp-for="Role" class="form-control">
+                            <option value="RegularUser">Regular user</option>
+                            <option value="CompanyAdmin">Company admin</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="CompanyAdmins" class="btn btn-outline-secondary rounded-pill px-4">
+                        Back
+                    </a>
+                    <button type="submit" class="btn btn-primary rounded-pill px-4">
+                        Update
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

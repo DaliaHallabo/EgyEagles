@@ -1,0 +1,12 @@
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\bin\Debug\net9.0\EgyEagles.Domain.deps.json
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\bin\Debug\net9.0\EgyEagles.Domain.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\bin\Debug\net9.0\EgyEagles.Domain.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\EgyEagles.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\EgyEagles.Domain.AssemblyInfoInputs.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\EgyEagles.Domain.AssemblyInfo.cs
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\EgyEagles.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\EgyEagles.Domain.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\refint\EgyEagles.Domain.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\EgyEagles.Domain.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\ref\EgyEagles.Domain.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Domain\obj\Debug\net9.0\EgyEagles.Domain.csproj.AssemblyReference.cache

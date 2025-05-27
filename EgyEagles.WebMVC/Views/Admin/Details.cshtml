@@ -1,0 +1,56 @@
+﻿@using EgyEagles.Application.DTOs.Users
+@model UserDto
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="container mt-4">
+    <div class="card shadow rounded-4">
+        <div class="card-body p-4">
+            <h3 class="mb-4 fw-bold text-primary">User Details</h3>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <strong>Full Name:</strong>
+                    <p class="form-control-plaintext">@Model.FullName</p>
+                </div>
+                <div class="col-md-6">
+                    <strong>Email:</strong>
+                    <p class="form-control-plaintext">@Model.Email</p>
+                </div>
+                <div class="col-md-6">
+                    <strong>Company:</strong>
+                    <p class="form-control-plaintext">@Model.CompanyName</p>
+                </div>
+                <div class="col-md-6">
+                    <strong>Role:</strong>
+                    <p class="form-control-plaintext">@Model.Role</p>
+                </div>
+            </div>
+
+            <hr />
+
+            <h5 class="fw-semibold text-secondary">Permissions</h5>
+            <ul class="list-group mb-4">
+                @if (Model.Permissions.Any())
+                {
+                    foreach (var permission in Model.Permissions)
+                    {
+                        <li class="list-group-item">@permission</li>
+                    }
+                }
+                else
+                {
+                    <li class="list-group-item text-muted">No permissions assigned</li>
+                }
+            </ul>
+
+            <div class="d-flex justify-content-end">
+                <a asp-action="CompanyAdmins" class="btn btn-outline-secondary rounded-pill px-4">
+                    Back to Users
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\bin\Debug\net9.0\EgyEagles.Infrastructure.deps.json
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\bin\Debug\net9.0\EgyEagles.Infrastructure.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\bin\Debug\net9.0\EgyEagles.Infrastructure.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\bin\Debug\net9.0\EgyEagles.Application.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\bin\Debug\net9.0\EgyEagles.Domain.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\bin\Debug\net9.0\EgyEagles.Application.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\bin\Debug\net9.0\EgyEagles.Domain.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagles.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagles.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagles.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagles.Infrastructure.AssemblyInfo.cs
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagles.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagle.F9AEDF4C.Up2Date
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagles.Infrastructure.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\refint\EgyEagles.Infrastructure.dll
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\EgyEagles.Infrastructure.pdb
+C:\Users\Dody\Desktop\Projects\EgyEagles Task\EgyEaglesAssessment\EgyEagles.Infrastructure\obj\Debug\net9.0\ref\EgyEagles.Infrastructure.dll

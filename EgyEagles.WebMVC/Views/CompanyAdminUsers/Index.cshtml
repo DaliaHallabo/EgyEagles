@@ -1,0 +1,63 @@
+﻿@using EgyEagles.Application.Interfaces.Permissions
+@using EgyEagles.Domain.Models
+@using Microsoft.AspNetCore.Identity
+
+@inject IPermissionService PermissionService
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    var currentUser = await UserManager.GetUserAsync(User);
+    var canAddUser = await PermissionService.HasPermissionAsync(currentUser.Id.ToString(), "AddUser");
+    var canDeleteUser = await PermissionService.HasPermissionAsync(currentUser.Id.ToString(), "DeleteUser");
+}
+
+@model List<ApplicationUser>
+
+@{
+    ViewData["Title"] = "Users";
+    string companyName = ViewBag.CompanyName as string ?? "Your Company";
+}
+
+<h2>Users - @companyName</h2>
+
+@if (canAddUser)
+{
+    <a class="btn btn-success mb-3" asp-action="Create">Add User</a>
+}
+else
+{
+    <button class="btn btn-secondary mb-3" disabled title="You don’t have permission to add users">Add User</button>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Full Name</th>
+            <th>Username</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>@user.FullName</td>
+                <td>@user.UserName</td>
+                <td>
+                    @if (canDeleteUser)
+                    {
+                        <form asp-action="Delete" asp-route-id="@user.Id" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <button class="btn btn-danger btn-sm" disabled title="You don’t have permission to delete users">Delete</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

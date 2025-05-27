@@ -1,0 +1,322 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\EgyEagles.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\EgyEagles.Application.csproj",
+        "projectName": "EgyEagles.Application",
+        "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\EgyEagles.Application.csproj",
+        "packagesPath": "C:\\Users\\Dody\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dody\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj",
+        "projectName": "EgyEagles.Domain",
+        "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj",
+        "packagesPath": "C:\\Users\\Dody\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dody\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MongoDbGenericRepository": {
+              "target": "Package",
+              "version": "[1.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Infrastructure\\EgyEagles.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Infrastructure\\EgyEagles.Infrastructure.csproj",
+        "projectName": "EgyEagles.Infrastructure",
+        "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Infrastructure\\EgyEagles.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Dody\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dody\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\EgyEagles.Application.csproj": {
+                "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\EgyEagles.Application.csproj"
+              },
+              "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.10.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj",
+        "projectName": "EgyEagles.WebMVC",
+        "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj",
+        "packagesPath": "C:\\Users\\Dody\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dody\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\EgyEagles.Application.csproj": {
+                "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Application\\EgyEagles.Application.csproj"
+              },
+              "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\EgyEagles.Domain.csproj"
+              },
+              "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Infrastructure\\EgyEagles.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Infrastructure\\EgyEagles.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

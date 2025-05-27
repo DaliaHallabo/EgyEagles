@@ -1,0 +1,194 @@
+﻿@model EgyEagles.WebMVC.Models.MapViewModel
+@{
+    ViewData["Title"] = "Vehicle Map Dashboard";
+}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<style>
+    #map-container {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+
+    #sidebar {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        z-index: 1000;
+        max-height: 80vh;
+        overflow-y: auto;
+        width: 300px;
+    }
+
+    .no-vehicles-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 500;
+        background: rgba(255,255,255,0.9);
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-map-marked-alt me-2"></i>Vehicle Map</h2>
+        @if (Model.IsSuperAdmin)
+        {
+            <form asp-action="Map" method="get" class="d-flex align-items-center">
+                <label class="me-2 mb-0">Select Company:</label>
+                <select name="companyId" onchange="this.form.submit()" class="form-select" style="width: 250px;">
+                    <option value="">-- All Companies --</option>
+                    @foreach (var company in Model.Companies)
+                    {
+                        <option value="@company.Id" selected="@(company.Id == Model.SelectedCompanyId)">@company.Name</option>
+                    }
+                </select>
+            </form>
+        }
+    </div>
+
+    <div id="map-container">
+        <div id="map"></div>
+
+        <div id="sidebar">
+            <h5><i class="fas fa-car me-2"></i>Vehicles</h5>
+            @if (Model.Vehicles.Any())
+            {
+                <ul class="list-unstyled">
+                    @foreach (var vehicle in Model.Vehicles)
+                    {
+                        <li class="mb-2 d-flex align-items-center">
+                            <input type="checkbox" checked id="chk-@vehicle.Id" onchange="toggleMarker('@vehicle.Id')"
+                                   class="form-check-input me-2 vehicle-checkbox">
+                            <label for="chk-@vehicle.Id" class="mb-0">
+                                @vehicle.PlateNumber (@vehicle.Model)
+                            </label>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <div class="alert alert-info mb-0">
+                    <i class="fas fa-info-circle me-2"></i>No vehicles found
+                </div>
+            }
+        </div>
+
+        @if (!Model.Vehicles.Any(v => v.Latitude != 0 && v.Longitude != 0))
+        {
+            <div class="no-vehicles-message">
+                <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                <h4>No Location Data</h4>
+                <p class="text-muted mb-0">No vehicles with GPS coordinates available</p>
+            </div>
+        }
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize the map
+    var map = L.map('map').setView([30.0444, 31.2357], 6); // Default to Cairo coordinates
+
+    // Add tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Store markers and bounds
+    var markers = {};
+    var markerBounds = L.latLngBounds();
+    var hasValidMarkers = false;
+
+    @foreach (var vehicle in Model.Vehicles)
+    {
+        if (vehicle.Latitude != 0 && vehicle.Longitude != 0)
+        {
+            <text>
+                    // Create marker for each vehicle with valid coordinates
+                    var marker@(vehicle.Id.Replace("-", "_")) = L.marker([@vehicle.Latitude, @vehicle.Longitude], {
+                        icon: L.divIcon({
+                            html: '<i class="fas fa-car" style="color: #0d6efd; font-size: 20px;"></i>',
+                            iconSize: [20, 20],
+                            className: 'vehicle-marker'
+                        })
+                    }).addTo(map)
+                    .bindPopup(`
+                        <div class="vehicle-popup">
+                            <h6>@vehicle.PlateNumber</h6>
+                            <p class="mb-1"><strong>Model:</strong> @vehicle.Model</p>
+                            <p class="mb-1"><strong>Type:</strong> @vehicle.Type</p>
+                            <p class="mb-0"><strong>Status:</strong> <span class="badge bg-@(vehicle.Status == "Available" ? "success" : "warning")">@vehicle.Status</span></p>
+                        </div>
+                    `);
+
+                    markers["@vehicle.Id"] = marker@(vehicle.Id.Replace("-", "_"));
+                    markerBounds.extend([@vehicle.Latitude, @vehicle.Longitude]);
+                    hasValidMarkers = true;
+            </text>
+        }
+    }
+
+    // Adjust map view based on markers
+    if (hasValidMarkers) {
+        map.fitBounds(markerBounds, {
+            padding: [50, 50],
+            maxZoom: 12
+        });
+
+        // Add a slight zoom out if only one marker
+        if (Object.keys(markers).length === 1) {
+            map.setZoom(map.getZoom() - 1);
+        }
+    } else {
+        // Default view when no markers
+        map.setView([30.0444, 31.2357], 6);
+    }
+
+    function toggleMarker(vehicleId) {
+        var checkbox = document.getElementById("chk-" + vehicleId);
+        var marker = markers[vehicleId];
+
+        if (checkbox.checked) {
+            map.addLayer(marker);
+            markerBounds.extend(marker.getLatLng());
+        } else {
+            map.removeLayer(marker);
+        }
+
+        // Recalculate bounds
+        var newBounds = L.latLngBounds();
+        Object.values(markers).forEach(m => {
+            if (map.hasLayer(m)) {
+                newBounds.extend(m.getLatLng());
+            }
+        });
+
+        if (newBounds.isValid()) {
+            map.fitBounds(newBounds, { padding: [50, 50] });
+        } else {
+            map.setView([30.0444, 31.2357], 6);
+        }
+    }
+</script>

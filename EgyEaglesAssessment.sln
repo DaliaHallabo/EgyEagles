@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyEagles.WebAPI", "EgyEagles.WebAPI\EgyEagles.WebAPI.csproj", "{F53F11D7-667E-4A22-8058-25C7C0836FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyEagles.WebMVC", "EgyEagles.WebMVC\EgyEagles.WebMVC.csproj", "{B909052B-3264-4FF0-BB0C-32CB06D2C689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyEagles.Application", "EgyEagles.Application\EgyEagles.Application.csproj", "{5E6365F0-AD6D-4738-AC30-F7CFB0CA610D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyEagles.Domain", "EgyEagles.Domain\EgyEagles.Domain.csproj", "{2A77A878-07EF-42E7-BADE-DA272CB7FCDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EgyEagles.Infrastructure", "EgyEagles.Infrastructure\EgyEagles.Infrastructure.csproj", "{187DA7D3-8F4D-4A9E-BEA2-3EEA7C47ED8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F53F11D7-667E-4A22-8058-25C7C0836FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53F11D7-667E-4A22-8058-25C7C0836FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53F11D7-667E-4A22-8058-25C7C0836FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53F11D7-667E-4A22-8058-25C7C0836FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B909052B-3264-4FF0-BB0C-32CB06D2C689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B909052B-3264-4FF0-BB0C-32CB06D2C689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B909052B-3264-4FF0-BB0C-32CB06D2C689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B909052B-3264-4FF0-BB0C-32CB06D2C689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6365F0-AD6D-4738-AC30-F7CFB0CA610D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6365F0-AD6D-4738-AC30-F7CFB0CA610D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6365F0-AD6D-4738-AC30-F7CFB0CA610D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6365F0-AD6D-4738-AC30-F7CFB0CA610D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A77A878-07EF-42E7-BADE-DA272CB7FCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A77A878-07EF-42E7-BADE-DA272CB7FCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A77A878-07EF-42E7-BADE-DA272CB7FCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A77A878-07EF-42E7-BADE-DA272CB7FCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187DA7D3-8F4D-4A9E-BEA2-3EEA7C47ED8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187DA7D3-8F4D-4A9E-BEA2-3EEA7C47ED8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187DA7D3-8F4D-4A9E-BEA2-3EEA7C47ED8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187DA7D3-8F4D-4A9E-BEA2-3EEA7C47ED8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

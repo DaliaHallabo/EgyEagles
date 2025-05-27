@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webmvc\\views\\companyadminusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|solutionrelative:egyeagles.webmvc\\views\\companyadminusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webmvc\\views\\admin\\companyadmins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|solutionrelative:egyeagles.webmvc\\views\\admin\\companyadmins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|solutionrelative:egyeagles.webmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F53F11D7-667E-4A22-8058-25C7C0836FDF}|EgyEagles.WebAPI\\EgyEagles.WebAPI.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F53F11D7-667E-4A22-8058-25C7C0836FDF}|EgyEagles.WebAPI\\EgyEagles.WebAPI.csproj|solutionrelative:egyeagles.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|solutionrelative:egyeagles.webmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|solutionrelative:egyeagles.webmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webmvc\\views\\dashboard\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|solutionrelative:egyeagles.webmvc\\views\\dashboard\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A77A878-07EF-42E7-BADE-DA272CB7FCDE}|EgyEagles.Domain\\EgyEagles.Domain.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.domain\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A77A878-07EF-42E7-BADE-DA272CB7FCDE}|EgyEagles.Domain\\EgyEagles.Domain.csproj|solutionrelative:egyeagles.domain\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|c:\\users\\dody\\desktop\\projects\\egyeagles task\\egyeaglesassessment\\egyeagles.webmvc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B909052B-3264-4FF0-BB0C-32CB06D2C689}|EgyEagles.WebMVC\\EgyEagles.WebMVC.csproj|solutionrelative:egyeagles.webmvc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyAdmins.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\Admin\\CompanyAdmins.cshtml",
+              "RelativeDocumentMoniker": "EgyEagles.WebMVC\\Views\\Admin\\CompanyAdmins.cshtml",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\Admin\\CompanyAdmins.cshtml",
+              "RelativeToolTip": "EgyEagles.WebMVC\\Views\\Admin\\CompanyAdmins.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T12:42:11.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\CompanyAdminUsers\\Index.cshtml",
+              "RelativeDocumentMoniker": "EgyEagles.WebMVC\\Views\\CompanyAdminUsers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\CompanyAdminUsers\\Index.cshtml",
+              "RelativeToolTip": "EgyEagles.WebMVC\\Views\\CompanyAdminUsers\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T12:41:48.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EgyEagles.WebMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EgyEagles.WebMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvz0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T11:57:02.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "EgyEagles.WebMVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\appsettings.json",
+              "RelativeToolTip": "EgyEagles.WebMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T08:24:13.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Program.cs",
+              "RelativeDocumentMoniker": "EgyEagles.WebMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Program.cs",
+              "RelativeToolTip": "EgyEagles.WebMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T08:24:11.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "EgyEagles.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebAPI\\appsettings.json",
+              "RelativeToolTip": "EgyEagles.WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-26T08:21:13.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "EgyEagles.Domain\\Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.Domain\\Models\\Vehicle.cs",
+              "RelativeToolTip": "EgyEagles.Domain\\Models\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T18:54:16.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Map.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\Dashboard\\Map.cshtml",
+              "RelativeDocumentMoniker": "EgyEagles.WebMVC\\Views\\Dashboard\\Map.cshtml",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Views\\Dashboard\\Map.cshtml",
+              "RelativeToolTip": "EgyEagles.WebMVC\\Views\\Dashboard\\Map.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T18:35:39.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "EgyEagles.WebMVC\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Dody\\Desktop\\Projects\\EgyEagles Task\\EgyEaglesAssessment\\EgyEagles.WebMVC\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "EgyEagles.WebMVC\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:32:53.099Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1198,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

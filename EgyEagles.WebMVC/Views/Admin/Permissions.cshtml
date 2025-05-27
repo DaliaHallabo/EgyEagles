@@ -1,0 +1,16 @@
+﻿@model PermissionsViewModel
+
+<h2>Manage User Permissions</h2>
+
+<form asp-action="AssignPermissions" method="post">
+    <div class="form-group">
+        <label for="SelectedUserId">Select a User</label>
+        <select asp-for="SelectedUserId" asp-items="@(new SelectList(Model.Users, "Id", "FullName"))" class="form-control">
+            <option value="">-- Select User --</option>
+        </select>
+    </div>
+
+    <!-- Permissions checkboxes or other UI comes here -->
+
+    <button type="submit" class="btn btn-primary">Save Permissions</button>
+</form>

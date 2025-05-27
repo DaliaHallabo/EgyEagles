@@ -1,0 +1,29 @@
+﻿@model EgyEagles.Domain.Models.Vehicle
+
+@{
+    ViewData["Title"] = "Delete Vehicle";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold text-danger">Delete Vehicle</h3>
+        <a asp-action="Index" class="btn btn-outline-secondary rounded-pill px-4">
+            ← Back to List
+        </a>
+    </div>
+
+    <div class="card shadow rounded-4">
+        <div class="card-body px-4 py-4 text-center">
+            <h4 class="mb-4">Are you sure you want to delete this vehicle?</h4>
+            <p class="mb-4"><strong>Plate Number:</strong> @Model.PlateNumber</p>
+
+            <form asp-action="DeleteConfirmed" method="post">
+                <input type="hidden" asp-for="Id" />
+                <div class="d-flex justify-content-center gap-3">
+                    <button type="submit" class="btn btn-danger rounded-pill px-4">Yes, Delete</button>
+                    <a asp-action="Index" class="btn btn-outline-secondary rounded-pill px-4">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

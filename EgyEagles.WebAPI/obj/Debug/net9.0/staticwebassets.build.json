@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5l3afIeIxXRz2IOOK1cq5xazpCDVcMEkbb7nG+cwVBE=",
+  "Source": "EgyEagles.WebAPI",
+  "BasePath": "_content/EgyEagles.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

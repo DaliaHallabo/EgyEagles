@@ -1,0 +1,152 @@
+﻿@using EgyEagles.Application.DTOs.Companies
+@model IEnumerable<CompanyAdminListDto>
+
+@{
+    ViewData["Title"] = "Company Administrators";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="fw-bold text-primary">
+            Company Administrators
+        </h3>
+        <a asp-action="CreateCompanyAdmin" class="btn btn-success rounded-pill px-4">
+            + Add Admin
+        </a>
+    </div>
+
+    <div class="card shadow rounded-4">
+        <div class="card-body">
+            <table class="table table-hover align-middle text-center">
+                <thead class="table-light">
+                    <tr>
+                        <th>Email</th>
+                        <th>Full Name</th>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var admin in Model)
+                    {
+                        <tr>
+                            <td>@admin.Email</td>
+                            <td>@admin.FullName</td>
+                            <td>
+                                <span class="badge bg-info text-dark">@admin.CompanyName</span>
+                            </td>
+                            <td>
+                                <span class="badge bg-success">@admin.Role</span>
+                            </td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a asp-action="Details" asp-route-userId="@admin.Id" class="btn btn-outline-primary btn-sm rounded-pill me-1">
+                                        View
+                                    </a>
+                                    <!-- Manage Permissions -->
+                                    <button type="button"
+                                            class="btn btn-sm btn-outline-warning d-flex align-items-center gap-1"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#permissionsModal-@admin.Id"
+                                            title="Manage Permissions">
+                                        <i class="fas fa-user-lock"></i> Permissions
+                                    </button>
+                                    <a asp-action="DeleteCompanyAdmin" asp-route-id="@admin.Id" class="btn btn-outline-danger btn-sm rounded-pill"
+                                       onclick="return confirm('Are you sure you want to delete this admin?');">
+                                        Delete
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Permissions Modals -->
+@foreach (var admin in Model)
+{
+    <div class="modal fade" id="permissionsModal-@admin.Id" tabindex="-1" aria-labelledby="permissionsLabel-@admin.Id" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="permissionsLabel-@admin.Id">
+                        <i class="fas fa-key me-2"></i> Permissions for @admin.FullName
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form asp-controller="Permissions" asp-action="UpdatePermissionsForCompanyAdmin" method="post">
+                    <div class="modal-body">
+                        <input type="hidden" name="UserId" value="@admin.Id" />
+
+                        <fieldset class="mb-4">
+                            <legend class="h6 fw-bold text-primary">
+                                <i class="fas fa-users me-2"></i> User Management
+                            </legend>
+
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" name="SelectedPermissions" value="AddUser" id="addUser-@admin.Id"
+                                @(admin.Permissions.Contains("AddUser") ? "checked" : "")>
+                                <label class="form-check-label" for="addUser-@admin.Id">Add Users</label>
+                            </div>
+
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" name="SelectedPermissions" value="DeleteUser" id="deleteUser-@admin.Id"
+                                @(admin.Permissions.Contains("DeleteUser") ? "checked" : "")>
+                                <label class="form-check-label" for="deleteUser-@admin.Id">Remove Users</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="mb-3">
+                            <legend class="h6 fw-bold text-primary">
+                                <i class="fas fa-car me-2"></i> Vehicle Management
+                            </legend>
+
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" name="SelectedPermissions" value="AddVehicle" id="addVehicle-@admin.Id"
+                                @(admin.Permissions.Contains("AddVehicle") ? "checked" : "")>
+                                <label class="form-check-label" for="addVehicle-@admin.Id">Add Vehicles</label>
+                            </div>
+
+                            <div class="form-check form-switch mb-2">
+                                <input class="form-check-input" type="checkbox" name="SelectedPermissions" value="RemoveVehicle" id="removeVehicle-@admin.Id"
+                                @(admin.Permissions.Contains("RemoveVehicle") ? "checked" : "")>
+                                <label class="form-check-label" for="removeVehicle-@admin.Id">Remove Vehicles</label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Extend more permission sections here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+                            <i class="fas fa-times me-1"></i> Cancel
+                        </button>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save me-1"></i> Save Changes
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Initialize tooltips if needed
+            $('[data-bs-toggle="tooltip"]').tooltip();
+
+            // Initialize DataTables if you want it
+            $('table').DataTable({
+                responsive: true,
+                columnDefs: [
+                    { orderable: false, targets: -1 }
+                ]
+            });
+        });
+    </script>
+}

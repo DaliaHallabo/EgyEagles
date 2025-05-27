@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<div class="welcome-container">
+    <h1 class="welcome-title">Welcome to <span class="highlight">EgyEagles</span></h1>
+    <p class="welcome-description">
+        EgyEagles is your intelligent vehicle tracking platform. Monitor your fleet’s location in real-time, manage vehicles across companies,
+        and ensure operational efficiency — all through an interactive map-based dashboard.
+    </p>
+</div>
+
+<style>
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 20px;
+        min-height: 80vh;
+        background: #f9f9f9;
+    }
+
+    .welcome-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .highlight {
+        color: #007BFF; /* Bootstrap blue or your brand color */
+    }
+
+    .welcome-description {
+        font-size: 1.25rem;
+        max-width: 800px;
+        color: #555;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+
+    .welcome-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    @@media (max-width: 768px) {
+        .welcome-title {
+            font-size: 2rem;
+        }
+
+        .welcome-description {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+    }
+</style>
