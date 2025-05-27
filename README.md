@@ -58,22 +58,13 @@ EgyEagles is a vehicle management system built with **.NET Core** and **Razor Pa
    cd EgyEagles
    ```
 
-2. **Setup the database**:
-
-   * Configure your connection string in `appsettings.json`.
-   * Run EF migrations:
-
-     ```bash
-     dotnet ef database update
-     ```
-
-3. **Run the project**:
+2. **Run the project**:
 
    ```bash
    dotnet run
    ```
 
-4. Open your browser at: `https://localhost:5001` or `http://localhost:5000`
+3. Open your browser at: `https://localhost:5001` or `http://localhost:5000`
 ---
 
 ## 👩‍💻 Contributing
