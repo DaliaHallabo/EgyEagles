@@ -46,7 +46,7 @@ EgyEagles is a vehicle management system built with **.NET Core** and **Razor Pa
 - **Backend**: ASP.NET Core
 - **Frontend**: Razor Pages
 - **Authentication**: Identity Framework
-- **Database**: Entity Framework Core + SQL Server
+- **Database**: Mongo database
 ---
 
 ## 📦 Installation
